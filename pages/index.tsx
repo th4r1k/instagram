@@ -19,11 +19,7 @@ const Home: NextPage = () => {
       </Head>
       
       <div className="flex h-screen flex-col items-center bg-slate-100 dark:bg-slate-800 dark:text-white">
-      <button className="mt-4 rounded-lg px-4 py-2 bg-slate-800 dark:bg-white text-white dark:text-black"
-      onClick={() => setTheme(theme === 'light'? 'dark' :'light')}
-      >
-      {theme === 'light' ? 'Dark' : 'Light'}
-      </button>
+      
       <main className="flex h-4/5 items-center">
         
         <div className="hidden shirink-0 sm:flex items-center ">
@@ -32,9 +28,14 @@ const Home: NextPage = () => {
         </div>
         
         <div className='columns-1 content-center '> 
-          <div className='flex flex-col border-2 align-middle px-10 pt-10 bg-white flex-shrink-0 dark:bg-slate-800 dark:text-white' >
-            <img className='px-10 py-5 hidden dark:flex' src='/logow.png' /> 
-            <img className='px-10 py-5 dark:hidden' src='/logo.png' /> 
+          <div className='flex flex-col border-2 align-middle px-10 pt-10 bg-white  dark:bg-slate-800 dark:text-white' >
+          <button className=" mb-1 rounded-lg  bg-slate-800 dark:bg-white text-white dark:text-black"
+      onClick={() => setTheme(theme === 'light'? 'dark' :'light')}
+      >
+      {theme === 'light' ? 'Dark' : 'Light'}
+      </button>
+            <img className='px-10 py-4 hidden dark:flex' src='/logow.png' /> 
+            <img className='px-10 py-4 dark:hidden' src='/logo.png' /> 
             <input className='rounded-sm border-r-2 border-2 mt-5 p-2 mb-1 text-xs w-full bg-slate-100 dark:bg-slate-800 dark:text-white' type="text" placeholder="Telefone, usuário ou email" />
             <input className='rounded-sm border-2 text-xs p-2 mb-2 w-auto bg-slate-100 dark:bg-slate-800 dark:text-white' type="password" placeholder="Senha" />
             <button className='bg-blue-300 rounded-xs mb-3 text-white text-sm p-1' > Entrar </button>
@@ -57,14 +58,14 @@ const Home: NextPage = () => {
    
           <span className='text-xs flex justify-center py-2'> Obtenha o Aplicativo</span>
         
-        <div className='flex justify-center align-middle '>
+        <div className='flex justify-center align-middle h-fit'>
         <Image src="/appstore.png" width={136} height={40} />
         <Image src="/playstore.png" width={136} height={40} />
         </div>
       </div>
       </main>
                
-      <div className="flex w-fit justify-center  h-fit text-xs text-gray-500 flex-wrap  ">
+      <div className="flex w-fit justify-center text-xs text-gray-500 flex-wrap  ">
        <a className='mx-2' href=''>Meta </a>
        <a className='mx-2' href=''>Sobre </a>
        <a className='mx-2' href=''>Blog </a>
@@ -79,7 +80,7 @@ const Home: NextPage = () => {
        <a className='mx-2' href=''>Instagram Lite </a>
       </div>
    
-      <div  className="flex w-fit justify-center my-2  h-fit text-xs text-gray-500 flex-wrap">
+      <div  className="flex w-fit justify-center my-2   text-xs text-gray-500 flex-wrap">
        <a className='mx-2' href=''>Dança </a>
        <a className='mx-2' href=''>Comida e bebida</a>
        <a className='mx-2' href=''>Casa e jardim</a>
@@ -87,7 +88,7 @@ const Home: NextPage = () => {
        <a className='mx-2' href=''>Artes visuais </a>
        </div>
 
-       <div  className="flex w-fit justify-center my-3  h-fit text-xs text-gray-500 flex-wrap">
+       <div  className="flex w-fit justify-center my-3  text-xs text-gray-500 flex-wrap">
          <select className='bg-transparent' name="Português (Brasil)">
           <option> Português (Brasil)</option>
          </select>
