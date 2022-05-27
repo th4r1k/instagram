@@ -4,7 +4,7 @@ This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](
 
 ## Deploy 
 
-https://instagram-n5lhvo90v-th4r1k.vercel.app/
+https://instagram-th4r1k.vercel.app/
 
 ## How to use
 
