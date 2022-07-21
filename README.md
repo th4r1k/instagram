@@ -10,10 +10,10 @@ https://instagram-th4r1k.vercel.app/
 
 
 ```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
+npx create-next-app --example with-tailwindcss 
 # or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
+yarn create next-app --example with-tailwindcss 
 # or
-pnpm create next-app -- --example with-tailwindcss with-tailwindcss-app
+pnpm create next-app  --example with-tailwindcss 
 ```
 
